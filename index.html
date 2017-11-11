@@ -1,1 +1,683 @@
-x
+<!doctype html>
+<!--[if IE 9]>
+<html lang="en" class="ie ie9">
+<![endif]-->
+<!--[if lt IE 9]>
+<html lang="en" class="ie ie-legacy">
+<![endif]-->
+<html class="no-js" lang="en">
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>
+        
+            
+                F%#ck Github Pages for my Jekyll blog. Why I decided to use Digital Ocean instead?
+            
+        
+    </title>
+    <meta name="description" content="Using Github Pages for your Jekyll blog is pretty common. In this article I'll explain why that's the worse thing you can do!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <base href="/">
+    <link href="/thoughts/feed.xml" type="application/rss+xml" rel="alternate" title="RSS Feed for gon.to" />
+
+
+    <!-- Twitter Cards -->
+    
+    
+        
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="https://gon.to/images/social/twitter-card.png">
+        
+    
+    <meta name="twitter:title" content="F%#ck Github Pages for my Jekyll blog. Why I decided to use Digital Ocean instead?">
+    <meta name="twitter:description" content="Using Github Pages for your Jekyll blog is pretty common. In this article I'll explain why that's the worse thing you can do!">
+    <meta name="twitter:creator" content="@mgonto">
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    
+    <meta property="og:image" content="https://gon.to/images/social/facebook-card.png">
+    
+    <meta property="og:title" content="F%#ck Github Pages for my Jekyll blog. Why I decided to use Digital Ocean instead?">
+    <meta property="og:description" content="Using Github Pages for your Jekyll blog is pretty common. In this article I'll explain why that's the worse thing you can do!">
+    <meta property="og:url" content="https://gon.to/2015/03/03/f-percent-number-ck-github-pages-for-jekyll-why-i-decided-to-use-digital-ocean/">
+    <meta property="og:site_name" content="Gonto — An engineering approach to marketing">
+
+    
+    
+
+    
+    <link rel="canonical" href="https://gon.to/2015/03/03/f-percent-number-ck-github-pages-for-jekyll-why-i-decided-to-use-digital-ocean/">
+    <link href="https://gon.to/feed.xml" type="application/atom+xml" rel="alternate" title="Gonto — An engineering approach to marketing Feed">
+
+    <!-- http://t.co/dKP3o1e -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="https://gon.to/images/logos/apple-touch-icon-57x57.png?v=2">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://gon.to/images/logos/apple-touch-icon-60x60.png?v=2">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://gon.to/images/logos/apple-touch-icon-72x72.png?v=2">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://gon.to/images/logos/apple-touch-icon-76x76.png?v=2">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://gon.to/images/logos/apple-touch-icon-114x114.png?v=2">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://gon.to/images/logos/apple-touch-icon-120x120.png?v=2">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://gon.to/images/logos/apple-touch-icon-144x144.png?v=2">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://gon.to/images/logos/apple-touch-icon-152x152.png?v=2">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://gon.to/images/logos/apple-touch-icon-180x180.png?v=2">
+    <link rel="icon" type="image/png" href="https://gon.to/images/logos/favicon-32x32.png?v=2" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://gon.to/images/logos/favicon-194x194.png?v=2" sizes="194x194">
+    <link rel="icon" type="image/png" href="https://gon.to/images/logos/favicon-96x96.png?v=2" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://gon.to/images/logos/android-chrome-192x192.png?v=2" sizes="192x192">
+    <link rel="icon" type="image/png" href="https://gon.to/images/logos/favicon-16x16.png?v=2" sizes="16x16">
+    <link rel="manifest" href="https://gon.to/images/logos/manifest.json?v=2">
+    <link rel="mask-icon" href="https://gon.to/images/logos/safari-pinned-tab.svg?v=2" color="#f2461c">
+    <link rel="shortcut icon" href="https://gon.to/images/logos/favicon.ico?v=2">
+    <meta name="msapplication-TileColor" content="#f2461c">
+    <meta name="msapplication-TileImage" content="https://gon.to/images/logos/mstile-144x144.png?v=2">
+    <meta name="msapplication-config" content="https://gon.to/images/logos/browserconfig.xml?v=2">
+    <meta name="theme-color" content="#f2461c">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://gon.to/styles/app.css"/>
+
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+
+    <body class="tpl-post ">
+
+        <div id="page" class="site">
+            <header class="site-header site-header--fixed" role="banner">
+                <nav class="navbar js-navbar">
+                    <div class="container">
+                        <div class="navbar__header">
+                            <div class="navbar__brand">
+                                <a href="https://gon.to" class="brand-logo js-brand-logo">
+                                    Gonto
+                                </a>
+                            </div><!-- .navbar-brand -->
+                            <div class="navbar__toggle">
+                                <button type="button" class="navbar-toggle-btn js-navbar-toggle">
+                                    <span class="text">Menu</span>
+                                    <i class="icon icon-bars"></i>
+                                </button>
+                            </div><!-- .navbar-toggle-btn -->
+                        </div><!-- .navbar__header -->
+
+                        <div class="navbar__collapse js-nav-overlay">
+
+                            <button class="navbar-toggle-btn js-navbar-toggle">
+                                <span class="text">Close</span>
+                                <i class="icon icon-close"></i>
+                            </button>
+
+                            <div class="navbar__collapse__wrapper">
+                                <ul class="nav navbar__nav navbar__nav--left">
+                                    <li >
+                                        <a href="https://gon.to"><span>Home</span></a>
+                                    </li>
+                                    <li >
+                                        <a href="https://gon.to/about/"><span>About</span></a>
+                                    </li>
+                                    <li  class="active" >
+                                        <a href="https://gon.to/thoughts/"><span>Thoughts</span></a>
+                                    </li>
+                                </ul><!-- .navbar__nav -->
+                                <ul class="nav navbar__nav navbar__nav--right">
+                                    <li >
+                                        <a href="https://gon.to/expertise/"><span>Expertise</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="js-contact-modal-toggle" href="#contact-modal"><span>Contact</span></a>
+                                    </li>
+                                </ul><!-- .navbar__nav -->
+
+                            </div><!-- .navbar__collapse__wrapper -->
+                        </div><!-- .navbar__collapse -->
+
+                    </div><!-- .container -->
+                </nav><!-- .navbar -->
+            </header><!-- .site-header -->
+
+            <div id="content" class="site-content">
+
+
+   <!-- Here go all fields from the post YAML like image, etc. -->
+  <article class="article">
+
+    <header class="article-header  article-header--no-hero ">
+        <div class="hero" style="background-image: url(' https://gon.to/images/posts/generic/post-hero.svg')">
+            <div class="container container--narrow">
+
+                <div class="hero__heading">
+                    <time class="article__date wow fadeInDown">March 03, 2015</time>
+
+                    <h1 class="article__title wow fadeInDown">F%#ck Github Pages for my Jekyll blog. Why I decided to use Digital Ocean instead?</h1>
+
+                    <div class="article__tags wow fadeInDown">
+                        <ul class="tags-list">
+                             
+                                <li><a class="tag" href="/tag/github">#github</a></li>
+                             
+                                <li><a class="tag" href="/tag/github-pages">#github pages</a></li>
+                             
+                                <li><a class="tag" href="/tag/jekyll">#jekyll</a></li>
+                             
+                                <li><a class="tag" href="/tag/blog">#blog</a></li>
+                             
+                                <li><a class="tag" href="/tag/protip">#ProTip</a></li>
+                             
+                                <li><a class="tag" href="/tag/redirect">#redirect</a></li>
+                             
+                                <li><a class="tag" href="/tag/personal-blog">#personal blog</a></li>
+                             
+                        </ul>
+                    </div><!-- .article__tags -->
+                </div><!-- .hero__heading -->
+
+            </div><!-- .container -->
+        </div><!-- .hero -->
+    </header><!-- .article-header -->
+
+    <div class="article-body">
+        <div class="container">
+
+            <!-- TODO: Code speed reader -->
+
+            <!-- Content -->
+            <div class="body-content has-intro">
+                <p>You’ve finally decided to create a blog. You want to share your view of the world with everyone who cares to read about it. If you’re a developer like me, you probably like Markdown and you’ll end up creating your blog with Jekyll since it’s very customizable and easy to use.</p>
+
+<p>Besides that, Github (the most beloved Webapp for all developers) has a nice feature that lets you <a href="https://help.github.com/articles/using-jekyll-with-pages/">easily deploy</a> your Jekyll blog for everyone to read it.</p>
+
+<p>However, not everything that Github does is pure gold. In this article, I’ll tell you about my own experience when creating this blog and why I decided to move away from Github and Github pages to deploy my blog in Digital Ocean.</p>
+
+<!-- more -->
+
+<h2 id="phases-of-creating-a-blog">Phases of creating a blog</h2>
+
+<p>In order to explain why I moved away from Github Pages, I’ll go over all the different phases I went through when building my blog.</p>
+
+<h3 id="phase-1-i-can-just-push-the-code-to-gh-and-it-works-life-is-great">Phase #1: I can just push the code to GH and it works! Life is great!</h3>
+
+<p>Once your jekyll blog is finished, you just push it to Github into the <code class="highlighter-rouge">gh-pages</code> branch and Github will <a href="https://help.github.com/articles/using-jekyll-with-pages/#using-jekyll">take care of publishing it</a> for you. This is a pretty neat feature! I was impressed.</p>
+
+<h3 id="phase-2-i-can-get-my-custom-domain-with-gh-pages-awesome">Phase #2: I can get my custom domain with GH Pages. AWESOME!</h3>
+
+<p>Now that the blog is out, you’ll want to serve it from your own domain. In my case, I wanted to serve the blog from the <a href="http://gon.to">gon.to</a> domain. In order to do that, it’s as easy as <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/">commiting a CNAME file</a> to our repository which will hold your domain. Again, I was really impressed.</p>
+
+<h3 id="phase-3-i-want-google-to-knwo-about-my-blog-why-isnt-this-working">Phase #3: I want Google to knwo about my blog. Why isn’t this working?</h3>
+
+<p>Now that the blog is out there, it’s time to submit the <code class="highlighter-rouge">sitemap.xml</code> so that Google can know about it and more people can get in. When I submit it, Google tells me that it’s having problem reading the file. I couldn’t understand what was going on so I decided to procrastinate and work on another thing. I was a little mad now.</p>
+
+<h3 id="phase-4-lets-make-the-blog-content-shared-on-twitter-and-facebook-look-really-good-hell-this-doesnt-work-either">Phase #4: Let’s make the blog content shared on Twitter and Facebook look really good. Hell, this doesn’t work either…</h3>
+
+<p>Another thing that makes it easy for people to read your blog is sharing it in Twitter and Facebook. I decided to add the <a href="https://github.com/mgonto/gon.to/blob/master/_includes/head.html#L8-L24">needed HTML headers</a> to make the content look really nice when shared on Facebook and Twitter. When I tried it out, it didn’t work at all. As this was the second thing that wasn’t working I decided to investigate what was going on.</p>
+
+<h3 id="so-whats-the-problem">So what’s the problem?</h3>
+
+<p>In order to avoid <a href="http://en.wikipedia.org/wiki/Denial-of-service_attack">DDoS attacks</a>, Github makes Github Pages sometimes return a <code class="highlighter-rouge">302</code> Redirect status code instead of a <code class="highlighter-rouge">200</code>. This redirect makes it impossible for Google, Facebook and Twitter to crawl your website and get your website content. This was the reason why nor the <code class="highlighter-rouge">sitemap.xml</code>, nor the HTML headers were readed. I discovered this thanks to the amazing <a href="https://developers.facebook.com/tools/debug/og/object/">Facebook Debugger</a> tool.</p>
+
+<blockquote>
+  <p><strong>Important Note</strong>: This problem only happens when you’re using an A record in your DNS to point to Github Pages. This means that I was having this problem because I was using <code class="highlighter-rouge">gon.to</code> for my blog. If I were to use <code class="highlighter-rouge">blog.gon.to</code> which was just a <code class="highlighter-rouge">CNAME</code>, I wouldn’t have had this problem.</p>
+</blockquote>
+
+<h3 id="whats-the-solution">What’s the solution?</h3>
+
+<p>I decided to buy a Digital Ocean machine for 5 USD a month. It’s cheap and it’s really easy to setup Jekyll on there.</p>
+
+<p>I’ll write a more detailed blog post on how to do it, but basically, what I did is the following:</p>
+
+<ul>
+  <li>Add a Git origin repository on Digital Ocean</li>
+  <li>Add a <code class="highlighter-rouge">post-receive</code> hook that once it received a push, it’d run <code class="highlighter-rouge">jekyll build</code> and output the site to <code class="highlighter-rouge">/var/www/gon.to</code></li>
+  <li>Have a simple <code class="highlighter-rouge">nginx</code> to serve the <code class="highlighter-rouge">/var/www/gon.to</code> folder</li>
+  <li>Do a <code class="highlighter-rouge">git push droplet master</code> from my machine everytime I did a change</li>
+</ul>
+
+<p>Pretty easy, right?</p>
+
+            </div><!-- .body-content -->
+        </div><!-- .container -->
+    </div><!-- .article-body -->
+
+    <footer class="article-footer">
+
+        <!-- Share -->
+        <div class="article-section article-share">
+    <div class="container">
+        <div class="article-share__links">
+
+            <dl class="share-links">
+                <dt>Share on</dt>
+                <dd>
+                    <div class="social-links">
+                        <ul class="nav">
+                            <li>
+                                <a href="#" data-url="https://gon.to/2015/03/03/f-percent-number-ck-github-pages-for-jekyll-why-i-decided-to-use-digital-ocean/" data-type="twitter" data-txt="F%#ck Github Pages for my Jekyll blog. Why I decided to use Digital Ocean instead?" data-via="mgonto" data-count="true" class="js-share-btn">
+                                    <i class="icon icon-twitter"></i>
+                                    <span class="text">Twitter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-url="https://gon.to/2015/03/03/f-percent-number-ck-github-pages-for-jekyll-why-i-decided-to-use-digital-ocean/" data-type="facebook" data-txt="F%#ck Github Pages for my Jekyll blog. Why I decided to use Digital Ocean instead?" data-via="mgonto" data-count="true" class="js-share-btn">
+                                    <i class="icon icon-facebook"></i>
+                                    <span class="text">Facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-url="https://gon.to/2015/03/03/f-percent-number-ck-github-pages-for-jekyll-why-i-decided-to-use-digital-ocean/" data-type="linkedin" data-txt="F%#ck Github Pages for my Jekyll blog. Why I decided to use Digital Ocean instead?" data-via="mgonto" data-count="true" class="js-share-btn">
+                                    <i class="icon icon-linkedin"></i>
+                                    <span class="text">Linkedin</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- .social-links -->
+                </dd>
+            </dl>
+
+        </div><!-- .article-share__links -->
+
+
+        <div class="article-share__comments">
+
+            <div class="share-comments">
+                
+                <a href="/2015/03/03/f-percent-number-ck-github-pages-for-jekyll-why-i-decided-to-use-digital-ocean/#comments" class="btn btn--hollow js-scroll-to">
+                    <span class="disqus-comment-count" data-disqus-url="https://gon.to/2015/03/03/f-percent-number-ck-github-pages-for-jekyll-why-i-decided-to-use-digital-ocean/">Comments</span>
+                </a>
+                
+            </div><!-- .share-comments -->
+
+        </div><!-- .article-share__comments -->
+    </div><!-- .container -->
+</div><!-- .article-share -->
+
+
+        
+
+
+        <!-- Subscribe to newsletter -->
+        <div class="footer-newsletter" id="footer-newsletter">
+    <div class="container">
+
+        <div class="form-wrapper">
+
+            <div class="alert alert--success js-subscribe-form-ok"></div>
+            <div class="alert alert--error js-subscribe-form-error"></div>
+            <span class="spinner" title="0">
+                <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+ width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+<path class="circle" fill="#000" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+  s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+  c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"/>
+<path class="loading" fill="#000" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+  C22.32,8.481,24.301,9.057,26.013,10.047z">
+  <animateTransform attributeType="xml"
+    attributeName="transform"
+    type="rotate"
+    from="0 20 20"
+    to="360 20 20"
+    dur="0.5s"
+    repeatCount="indefinite"/>
+  </path>
+</svg>
+
+            </span><!-- .spinner -->
+
+            <div class="subscribe-form-area">
+                <header class="footer-newsletter__header">
+                    <figure class="footer-newsletter__img">
+                        <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
+<g>
+	<g>
+		<circle style="fill:#7ED8F0;" cx="24" cy="24" r="24"/>
+	</g>
+	<g>
+		<g>
+			<g>
+				<path style="fill:#FFFFFF;" d="M37.3,36.2c0.4,0,0.8-0.2,1.1-0.5c0.3-0.3,0.5-0.7,0.5-1.1V20.9c0-0.5-0.3-0.9-0.6-1.2L25.6,10
+					c-0.3-0.2-0.6-0.3-0.9-0.3h-0.1c-0.3,0-0.7,0.1-0.9,0.3l-12.6,9.7c-0.4,0.3-0.6,0.7-0.6,1.2v13.9c0,0.4,0.2,0.8,0.5,1.1
+					c0.3,0.3,0.7,0.5,1.1,0.5H37.3z"/>
+				<path style="fill:#3A3D4A;" d="M37.3,36.7H12c-0.5,0-1-0.2-1.4-0.6c-0.4-0.4-0.6-0.9-0.6-1.4V20.9c0-0.6,0.3-1.2,0.8-1.5
+					l12.6-9.7c0.3-0.3,0.7-0.4,1.1-0.4h0.1c0.4,0,0.8,0.2,1.1,0.4l12.6,9.7c0.5,0.4,0.8,0.9,0.8,1.5v13.9c0,0.5-0.2,1-0.6,1.4
+					C38.2,36.4,37.8,36.7,37.3,36.7z M24.6,9.7v0.4c-0.3,0-0.5,0.1-0.7,0.2L11.4,20c-0.3,0.2-0.5,0.6-0.5,0.9v13.9
+					c0,0.3,0.1,0.6,0.3,0.8c0.2,0.2,0.5,0.3,0.8,0.3h25.2c0.3,0,0.6-0.1,0.8-0.3c0.2-0.2,0.3-0.5,0.3-0.8V20.9
+					c0-0.4-0.2-0.7-0.5-0.9l-12.5-9.7c-0.2-0.1-0.4-0.2-0.6-0.2L24.6,9.7z"/>
+			</g>
+			<g>
+				<polygon style="fill:#FCF6A4;" points="14.2,12.8 14.2,22.7 24.6,30.2 35.1,22.8 35.1,12.8 				"/>
+			</g>
+			<g>
+				<polygon style="fill:#3A3D4A;" points="35.5,22.8 34.7,22.8 34.7,13.2 14.6,13.2 14.6,22.7 13.8,22.7 13.8,12.3 35.5,12.3 				
+					"/>
+			</g>
+			<g>
+				<g>
+					<g>
+						<g>
+							<circle style="fill:#3A3D4A;" cx="20.9" cy="18" r="0.8"/>
+						</g>
+					</g>
+					<g>
+						<g>
+							<path style="fill:#3A3D4A;" d="M21.7,20.7c-0.2,0-0.3,0.2-0.3,0.4c0.3,1,1.5,2.1,3.2,2.1c1.6,0,2.9-1.2,3.2-2.1
+								c0.1-0.2-0.1-0.4-0.3-0.4H21.7z"/>
+						</g>
+						<g>
+							<path style="fill:#F9461C;" d="M23.7,21.8c0,0.2,0.4,0.8,1,0.8s0.9-0.6,0.9-0.8s-0.4-0.2-1-0.2S23.7,21.6,23.7,21.8z"/>
+						</g>
+					</g>
+				</g>
+				<g>
+					<g>
+						<g>
+							<circle style="fill:#3A3D4A;" cx="28.4" cy="18" r="0.8"/>
+						</g>
+					</g>
+				</g>
+			</g>
+			<g>
+				<polygon style="fill:#D9D28C;" points="34.7,22.4 24.6,28.2 14.6,22.4 24.6,29.9 				"/>
+			</g>
+			<g>
+				<g>
+					<path style="fill:#3A3D4A;" d="M11,36.2c-0.1,0-0.2-0.1-0.3-0.1c-0.2-0.2-0.2-0.4-0.1-0.6l6.5-7.8c0.2-0.2,0.4-0.2,0.6-0.1
+						c0.2,0.2,0.2,0.4,0.1,0.6L11.3,36C11.2,36.1,11.1,36.2,11,36.2z"/>
+				</g>
+				<g>
+					<path style="fill:#3A3D4A;" d="M38.3,36.2c-0.1,0-0.3-0.1-0.3-0.2l-6.5-7.8c-0.2-0.2-0.1-0.4,0.1-0.6s0.4-0.1,0.6,0.1l6.5,7.8
+						c0.2,0.2,0.1,0.4-0.1,0.6C38.5,36.2,38.4,36.2,38.3,36.2z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+<g>
+	<path style="fill:#3A3D4A;" d="M24.6,30.7l-14.1-10c-0.2-0.2-0.2-0.4-0.1-0.6c0.2-0.2,0.4-0.2,0.6-0.1l13.6,9.6L38.2,20
+		c0.2-0.2,0.5-0.1,0.6,0.1c0.2,0.2,0.1,0.5-0.1,0.6L24.6,30.7z"/>
+</g>
+</svg>
+
+                    </figure>
+                    <h2 class="footer-newsletter__title">Subscribe to get new awesome blog posts in your inbox once a month!</h2>
+                </header><!-- .page-section__header -->
+                <div class="footer-newsletter__body">
+
+                    
+
+
+<form class="form form--alt subscribe-form" autocomplete="off" action="/">
+    <div class="form-group">
+        <label class="control-label" for="subscribe_email">Your e-mail address <span class="req">*</span></label>
+        <input type="email" class="form-control" name="subscribe_email" placeholder="Your e-mail address*" required="required">
+    </div><!-- .form-group -->
+    <button type="submit" class="btn btn--hollow-white js-btn-newsletter-subscribe">Subscribe</button>
+</form>
+
+
+                </div><!-- .page-section__body -->
+            </div><!-- .subscribe-form-area -->
+
+        </div><!-- .form-wrapper -->
+
+    </div><!-- .container -->
+</div><!-- .footer-newsletter -->
+
+
+        <!-- Disqus comments -->
+        <div class="article-section article-comments" id="comments">
+            <div class="container">
+                
+                  
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'gontosblog'; // required: replace example with your forum shortname
+        var disqus_config = function () {
+            this.page.url = 'https://gon.to/2015/03/03/f-percent-number-ck-github-pages-for-jekyll-why-i-decided-to-use-digital-ocean/';
+            
+            this.page.title = "F%#ck Github Pages for my Jekyll blog. Why I decided to use Digital Ocean instead?";
+        };
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+                  <div id="disqus_thread"></div><!-- /#disqus_thread -->
+                
+            </div><!-- .container -->
+        </div><!-- .article-comments -->
+
+
+    </footer><!-- .article-footer -->
+</article><!-- .article -->
+
+
+		</div><!-- .site-content -->
+
+		<footer class="site-footer">
+			<div class="container container--fluid">
+
+				<nav class="site-footer__nav">
+					<a class="site-footer-logo js-go-up" title="Go up!" href="/2015/03/03/f-percent-number-ck-github-pages-for-jekyll-why-i-decided-to-use-digital-ocean/#page">
+						<i class="icon"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-2 3 50 42" style="enable-background:new -2 3 50 42;" xml:space="preserve">
+<title>Gonto</title>
+<path class="shape" d="M42.7,24l4-5.2c0.7-0.9,0-2.3-1.1-2.3h-6.5c-1,0-1.9,0.4-2.5,1.2L33.4,22h-14c-1.1,0-2,0.9-2,2c0,1.1,0.9,2,2,2h6.9
+	c-0.9,3-3.6,5.1-6.9,5.1c-3.9,0-7.2-3.2-7.2-7.2s3.2-7.2,7.2-7.2c1.3,0,2.7,0.4,3.8,1.1c0.9,0.6,2.2,0.3,2.8-0.6
+	c0.6-0.9,0.3-2.2-0.6-2.8c-1.8-1.1-3.9-1.7-6-1.7c-6.2,0-11.2,5-11.2,11.2s5,11.2,11.2,11.2c5.5,0,10.1-4,11-9.2h2.9l3.2,4.3
+	c0.6,0.8,1.5,1.2,2.5,1.2h6.5c1.2,0,1.9-1.4,1.1-2.3L42.7,24z M30.9,35.5c-3.1,3.1-7.2,4.8-11.5,4.8c-5,0-9.6-2.2-12.7-6.1
+	C4.3,31.3,3.1,27.7,3.1,24c0-9,7.3-16.3,16.3-16.3c3.8,0,7.3,1.2,10.2,3.6c0.9,0.7,2.2,0.6,2.8-0.3c0.7-0.9,0.6-2.2-0.3-2.8
+	C28.6,5.2,24,3.6,19.4,3.6C8.2,3.6-1,12.7-1,24c0,4.6,1.6,9.2,4.5,12.8c3.9,4.8,9.7,7.6,15.9,7.6c5.4,0,10.5-2.1,14.4-5.9
+	c0.8-0.8,0.8-2.1,0-2.9C33,34.8,31.7,34.7,30.9,35.5z"/>
+</svg>
+</i>
+						<span class="text">Go up!</span>
+					</a>
+				</nav><!-- .site-footer__nav -->
+
+				<div class="site-footer__copy">
+					2017 &copy; Martin Gontovnikas
+				</div><!-- .site-footer__copy -->
+
+				<div class="site-footer__social">
+					<dl>
+						<dt>Follow me</dt>
+						<dd>
+							<div class="social-links">
+    <ul class="nav">
+        <li>
+            <a rel="external" href="https://twitter.com/mgonto">
+                <i class="icon icon-twitter"></i>
+                <span class="text">Twitter</span>
+            </a>
+        </li>
+        <li>
+            <a rel="external" href="https://linkedin.com/in/mgonto">
+                <i class="icon icon-linkedin"></i>
+                <span class="text">Linkedin</span>
+            </a>
+        </li>
+        <li>
+            <a rel="external" href="https://github.com/mgonto">
+                <i class="icon icon-github"></i>
+                <span class="text">Github</span>
+            </a>
+        </li>
+    </ul>
+</div><!-- .social-links -->
+
+						</dd>
+					</dl>
+				</div><!-- .site-footer__social -->
+
+			</div><!-- .container -->
+		</footer><!-- .site-footer -->
+	</div><!-- .site -->
+
+
+	<script>
+	WebFontConfig = {
+		google: {
+	 		families: ['Source Serif Pro:n4,n7','Source+Code+Pro']
+ 		},
+		custom: {
+			families: ['GT Walsheim:n4,n7,n9', 'Circular:n4,n5,n7'],
+			urls: ['https://gon.to/styles/fonts.css']
+		}
+	};
+
+	
+    WebFontConfig = {
+      google: {
+        families: ['Source Serif Pro:n4,n7','Source+Code+Pro']
+      },
+      custom: {
+        families: ['GT Walsheim:n4,n7,n9', 'Circular:n4,n5,n7'],
+        urls: ['https://gon.to/styles/fonts.css']
+      }
+    };
+  
+
+	(function(d) {
+      var wf = d.createElement('script'), s = d.scripts[0];
+      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';
+      s.parentNode.insertBefore(wf, s);
+    })(document);
+	</script>
+
+	<script src="https://gon.to/scripts/app.min.js"></script>
+
+  
+
+
+
+        
+        <!-- Asynchronous Google Analytics snippet -->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-48082910-1', 'auto');
+          ga('require', 'linkid', 'linkid.js');
+          ga('send', 'pageview');
+        </script>
+        
+
+	<!-- TODO: If ok, the modal closes automatically -->
+
+<div id="contact-modal" class="modal modal-contact mfp-hide">
+
+    <button type="button" class="modal-toggle-btn js-modal-close">
+        <span class="text">Close</span>
+        <i class="icon icon-close"></i>
+    </button>
+
+    <div class="modal__wrapper">
+        <div class="container">
+            <header class="page-section__header">
+                <h2 class="page-section__title">Get in touch!</h2>
+                <p class="page-section__subtitle">
+                    If you want to bounce an idea with me, talk about a project, or just want to grab a beer, contact me! I'd love to hear from you!
+                </p>
+            </header><!-- .page-section__header -->
+
+            <div class="form-wrapper">
+
+    <div class="alert alert--success js-contact-form-ok"></div>
+    <div class="alert alert--error js-contact-form-error"></div>
+    <span class="spinner" title="0">
+        <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+ width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+<path class="circle" fill="#000" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+  s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+  c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"/>
+<path class="loading" fill="#000" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+  C22.32,8.481,24.301,9.057,26.013,10.047z">
+  <animateTransform attributeType="xml"
+    attributeName="transform"
+    type="rotate"
+    from="0 20 20"
+    to="360 20 20"
+    dur="0.5s"
+    repeatCount="indefinite"/>
+  </path>
+</svg>
+
+    </span><!-- .spinner -->
+
+    <form class="form form--alt contact-form" autocomplete="off">
+        <fieldset>
+            <div class="form-group">
+                <label class="control-label" for="firstname">First name <span class="req">*</span></label>
+                <input name="firstname" class="form-control needsclick" type="text" placeholder="First Name*" required="required" />
+            </div><!-- .form-group -->
+
+            <div class="form-group">
+                <label class="control-label" for="lastname">Last name <span class="req">*</span></label>
+                <input name="lastname" class="form-control needsclick" type="text" placeholder="Last Name*" required="required" />
+            </div><!-- .form-group -->
+
+            <div class="form-group">
+                <label class="control-label" for="email">Email address <span class="req">*</span></label>
+                <input name="email" class="form-control needsclick" type="email" placeholder="Email address*" required="required" />
+            </div><!-- .form-group -->
+
+            <div class="form-group">
+                <label class="control-label" for="company">Company</label>
+                <input name="company" class="form-control needsclick" type="text" placeholder=" Company" />
+            </div><!-- .form-group -->
+
+            <div class="form-group">
+                <label class="control-label" for="message">Tell me more <span class="req">*</span></label>
+                <div class="textarea-wrapper">
+                    <textarea class="js-form-comments needsclick" rows="1" name="message" placeholder="Tell me more" required="required"></textarea>
+                </div>
+            </div><!-- .form-group -->
+        </fieldset>
+        <div class="form-actions">
+            <button type="submit" class="btn btn--terciary js-send-btn js-contact-form-send-btn">Send</button>
+        </div><!-- .form-actions -->
+    </form>
+
+</div><!-- .form-wrapper -->
+
+        </div><!-- .container -->
+
+    </div><!-- .modal__wrapper -->
+</div><!-- .modal -->
+
+</body>
+</html>
+
